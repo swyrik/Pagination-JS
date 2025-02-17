@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleItemsPerPageSelect(e) {
     page._ItemsPerPage = e.target.value;
+    page._CurrentPage = 1;
     // make the fetch call again
     fetchProducts(prepareUrlParams(page), "", productItemsContainer, page, itemsCountLabel);
   }
@@ -64,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (e.key === 'Enter' || e.keyCode === 13) {
       page._Search = e.target.value;
+      page._CurrentPage = 1;
       // make the fetch call again
       fetchProducts(prepareUrlParams(page), "", productItemsContainer, page, itemsCountLabel);
     }
