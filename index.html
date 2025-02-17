@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="search">
+      <input placeholder="Search products..." type="search" name="search-product" id="search-product" />
+    </div>
+    <div class="items"></div>
+    <div class="pagination">
+      <div class="items-per-page">
+        <label for="itemsPerPageId">Items Per Page</label>
+        <select name="itemsPerPage" id="itemsPerPageId">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+        </select>
+      </div>
+      <div class="pagination-tool">Pagination tool</div>
+      <div class="items-count">total count</div>
+    </div>
+  </div>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
